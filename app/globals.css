@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-darker {
+    background: hsl(var(--nextui-default) / var(--nextui-default-opacity, var(--tw-bg-opacity)));
+}
+
+:is(.dark .bg-dark) {
+    background-color: rgb(16, 16, 20);
+}
+
+:is(.light .bg-dark) {
+    background-color: #F4F4F5;
+}
+
+::-webkit-scrollbar {
+	width: 0.5em;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3F3F46;
+    border-radius: 0.5em;
+}
+
+:is(.light) {
+    ::-webkit-scrollbar-thumb {
+        background: #D4D4D8;
+    }
+}
